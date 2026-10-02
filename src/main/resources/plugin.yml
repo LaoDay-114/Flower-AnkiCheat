@@ -1,0 +1,20 @@
+name: Flower-AC
+version: '1.0-TEST'
+main: net.bitcat114.flower_ac.Flower_ac.flowerAC.FlowerAC
+api-version: '1.21'
+authors: [ LaoMeow114 LaoDay_ BitCat114 Lotus_littleskin ]
+description: 获取玩家客户端Mod列表
+website: None
+
+softdepend: [packetevents]
+
+commands:
+  flower:
+    description: 查看指定玩家的客户端加载器与模组（网络通道）信息
+    usage: /flower <玩家名|UUID|list>
+    permission: flowerac.query
+
+permissions:
+  flowerac.query:
+    description: 允许使用 /flower 查看客户端信息，进服检测报告也会发送给该权限持有者
+    default: op
